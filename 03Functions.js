@@ -30,13 +30,13 @@ ans = result("shubham", "ece", false);
 console.log(ans);
 // **************************************
 // how to return safe return value 
-// 1. functions that return only one type of value 
+// 1. functions that return only one type of value *****you can define which type of data type your function will return ****
 function incrementer(num) {
     return ++num;
 }
 // console.log(incrementer("8")); ***wrong will give error
 console.log(incrementer(6));
-// 2.functions that return multiple types of values
+// 2.**functions that return multiple types of values**
 function condition(loged) {
     if (loged) {
         return 1;
@@ -45,5 +45,16 @@ function condition(loged) {
         return "you are not loged";
     }
 }
-console.log(condition(true));
-console.log(condition(false));
+var con1 = condition(true); //its type is a or function between number and string 
+var con2 = condition(false);
+console.log(con1);
+console.log(con2);
+// write a arrow function that return two types of data type 
+var myFunc = function (a) {
+    if (a > 0)
+        return true;
+    else
+        return "false";
+};
+console.log("the value of myFunc is ".concat(myFunc(2)));
+console.log("the value of myFunc is ".concat(myFunc(-1)));
