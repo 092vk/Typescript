@@ -28,3 +28,22 @@ var ans = result("shivam", "ece", true);
 console.log(ans);
 ans = result("shubham", "ece", false);
 console.log(ans);
+// **************************************
+// how to return safe return value 
+// 1. functions that return only one type of value 
+function incrementer(num) {
+    return ++num;
+}
+// console.log(incrementer("8")); ***wrong will give error
+console.log(incrementer(6));
+// 2.functions that return multiple types of values
+function condition(loged) {
+    if (loged) {
+        return 1;
+    }
+    else {
+        return "you are not loged";
+    }
+}
+console.log(condition(true));
+console.log(condition(false));

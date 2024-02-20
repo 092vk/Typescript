@@ -40,5 +40,32 @@ console.log(ans);
 // **************************************
 // how to return safe return value 
 
+// 1. functions that return only one type of value 
+function incrementer(num:number):number{
+    return ++num;
+}
+// console.log(incrementer("8")); ***wrong will give error
+console.log(incrementer(6));
+
+
+
+// 2.functions that return multiple types of values
+function condition(loged:boolean){
+    if(loged){
+        return 1;
+    }
+    else{
+        return "you are not loged";
+    }
+}
+let con1 = condition(true);
+let con2= condition(false);
+
+console.log(con1);
+console.log(con2);
+
+
+
+
 
 export{};
